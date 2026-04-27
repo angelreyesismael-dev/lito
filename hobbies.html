@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Hobbies</title>
 
 <style>
@@ -19,12 +20,13 @@ body{
     top:0;
     height:50px;
     z-index:1000;
+    display:flex;
+    align-items:center;
 }
 
 .navbar a{
-    float:left;
     color:white;
-    padding:14px 20px;
+    padding:14px 15px;
     text-decoration:none;
 }
 
@@ -39,7 +41,7 @@ body{
     font-size:25px;
     padding:10px 20px;
     cursor:pointer;
-    float:right;
+    margin-left:auto;
 }
 
 /* menú lateral */
@@ -89,6 +91,13 @@ body{
     margin-top:60px;
     max-width:800px;
     margin:auto;
+    text-align:center;
+}
+
+/* 🔥 VIDEO RESPONSIVE */
+video{
+    width:100%;
+    max-width:400px;
 }
 </style>
 </head>
@@ -130,11 +139,10 @@ Me gusta dibujar, jugar videojuegos como Hollow Knight, el basquetbol
 y el ciclismo MTB.
 </p>
 
-<center>
-<video width="400" controls>
+<video controls>
 <source src="videos/WhatsApp Video 2026-03-12 at 9.31.20 AM.mp4">
 </video>
-</center>
+
 </div>
 
 </body>

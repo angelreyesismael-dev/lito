@@ -2,13 +2,14 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Curriculum Vitae</title>
 
 <style>
 body{
     margin:0;
     font-family: Arial;
-    background-image:url("img/fondo.jfif");
+    background-image:url("img/fondo.jfif"); 
 }
 
 /* NAVBAR */
@@ -19,12 +20,13 @@ body{
     top: 0;
     height: 50px;
     z-index: 1000;
+    display: flex;
+    align-items: center;
 }
 
 .navbar a{
-    float: left;
     color: white;
-    padding: 14px 20px;
+    padding: 14px 15px;
     text-decoration: none;
 }
 
@@ -39,7 +41,7 @@ body{
     font-size: 25px;
     padding: 10px 20px;
     cursor: pointer;
-    float: right;
+    margin-left: auto;
 }
 
 /* menú lateral */
@@ -92,6 +94,7 @@ body{
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
 </style>
 </head>
@@ -110,7 +113,7 @@ body{
     <a href="referencias.html">Referencias</a>
     <a href="gmail.html">Correo</a>
 
-    <!-- botón -->
+    <!-- botón hamburguesa -->
     <label for="toggle" class="hamburger">☰</label>
 </div>
 
@@ -127,7 +130,7 @@ body{
 
 <div class="contenido">
 
-<center><h1>CURRICULUM VITAE</h1></center>
+<h1>CURRICULUM VITAE</h1>
 
 <h2>Perfil Profesional</h2>
 
@@ -137,17 +140,13 @@ Desde pequeño me llamó la atención el dibujo, pero comprendí que debía apre
 por eso decidí estudiar computación para expandir mis conocimientos.
 </p>
 
-<center>
 <img src="imagenes/profesional.jfif" width="250">
-</center>
 
-<br>
+<br><br>
 
-<center>
-<audio controls autoplay loop>
+<audio controls loop>
 <source src="audios/freesound_community-trap-rap-loop-135-bpm-100650.mp3">
 </audio>
-</center>
 
 </div>
 

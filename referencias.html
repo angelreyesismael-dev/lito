@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Referencias</title>
 
 <style>
@@ -9,6 +10,7 @@ body{
     margin:0;
     font-family:Arial;
     background-image:url("img/fondo.jfif");
+    overflow-x:hidden;
 }
 
 /* NAVBAR */
@@ -19,12 +21,13 @@ body{
     top:0;
     height:50px;
     z-index:1000;
+    display:flex;
+    align-items:center;
 }
 
 .navbar a{
-    float:left;
     color:white;
-    padding:14px 20px;
+    padding:14px 15px;
     text-decoration:none;
 }
 
@@ -39,19 +42,20 @@ body{
     font-size:25px;
     padding:10px 20px;
     cursor:pointer;
-    float:right;
+    margin-left:auto;
+    user-select:none;
 }
 
 /* menú lateral */
 .menu-lateral{
     position:fixed;
     top:0;
-    right:-220px;
-    width:220px;
+    right:-240px;
+    width:240px;
     height:100%;
     background:#333;
     padding-top:60px;
-    transition:0.3s;
+    transition:0.3s ease;
 }
 
 .menu-lateral a{
@@ -89,13 +93,19 @@ body{
     margin-top:60px;
     max-width:800px;
     margin:auto;
+    text-align:center;
+}
+
+/* AUDIO RESPONSIVE */
+audio{
+    width:100%;
+    max-width:300px;
 }
 </style>
 </head>
 
 <body>
 
-<!-- checkbox -->
 <input type="checkbox" id="toggle" hidden>
 
 <div class="navbar">
@@ -107,11 +117,9 @@ body{
 <a href="referencias.html">Referencias</a>
 <a href="gmail.html">Correo</a>
 
-<!-- botón -->
 <label for="toggle" class="hamburger">☰</label>
 </div>
 
-<!-- menú lateral -->
 <div class="menu-lateral">
 <a href="index.html">Inicio</a>
 <a href="datos.html">Datos Personales</a>
@@ -143,7 +151,9 @@ Email: luisreyes@gmail.com
 
 <audio controls>
 <source src="audios/naymyokyaw-dj-scratch-pattern-5-452584.mp3">
+Tu navegador no soporta audio.
 </audio>
+
 </div>
 
 </body>
