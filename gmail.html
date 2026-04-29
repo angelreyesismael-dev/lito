@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Correo</title>
 
 <style>
@@ -9,9 +10,10 @@ body{
     margin:0;
     font-family: Arial;
     background: linear-gradient(to right, #dbeafe, #bfdbfe);
+    overflow-x:hidden;
 }
 
-/* NAVBAR */
+
 .navbar{
     background-color: #222;
     position: fixed;
@@ -19,12 +21,13 @@ body{
     top: 0;
     height: 50px;
     z-index: 1000;
+    display:flex;
+    align-items:center;
 }
 
 .navbar a{
-    float: left;
     color: white;
-    padding: 14px 20px;
+    padding: 14px 15px;
     text-decoration: none;
 }
 
@@ -32,22 +35,22 @@ body{
     background-color: #575757;
 }
 
-/* botón hamburguesa */
+
 .hamburger{
     display: none;
     color: white;
     font-size: 25px;
     padding: 10px 20px;
     cursor: pointer;
-    float: right;
+    margin-left:auto;
 }
 
-/* menú lateral */
+
 .menu-lateral{
     position: fixed;
     top: 0;
-    right: -220px;
-    width: 220px;
+    right: -240px;
+    width: 240px;
     height: 100%;
     background:#333;
     padding-top: 60px;
@@ -66,7 +69,7 @@ body{
     background:#575757;
 }
 
-/* 📱 CELULAR */
+
 @media (max-width:768px){
 
     .navbar a{
@@ -76,18 +79,25 @@ body{
     .hamburger{
         display: block;
     }
+
+
+    .card{
+        width: 90%;
+        padding: 20px;
+    }
 }
 
-/* activar menú */
+
 #toggle:checked ~ .menu-lateral{
     right: 0;
 }
 
-/* CONTENIDO */
+
 .contenido{
-    margin-top: 80px;
+    margin-top: 70px;
     display: flex;
     justify-content: center;
+    padding: 10px;
 }
 
 /* TARJETA */
@@ -101,12 +111,12 @@ body{
     text-align: center;
 }
 
-/* TITULO */
+
 h1{
     color: #1e3a8a;
 }
 
-/* FORMULARIO */
+
 .form-group{
     margin: 15px 0;
     text-align: left;
@@ -134,7 +144,7 @@ textarea{
     height: 100px;
 }
 
-/* BOTON */
+
 button{
     margin-top: 15px;
     padding: 12px 25px;
@@ -165,10 +175,8 @@ button:hover{
 
 <body>
 
-<!-- 🔥 checkbox -->
 <input type="checkbox" id="toggle" hidden>
 
-<!-- NAVBAR -->
 <div class="navbar">
     <a href="index.html">Inicio</a>
     <a href="datos.html">Datos Personales</a>
@@ -178,11 +186,9 @@ button:hover{
     <a href="referencias.html">Referencias</a>
     <a href="gmail.html">Correo</a>
 
-    <!-- botón -->
     <label for="toggle" class="hamburger">☰</label>
 </div>
 
-<!-- menú lateral -->
 <div class="menu-lateral">
     <a href="index.html">Inicio</a>
     <a href="datos.html">Datos Personales</a>
@@ -193,7 +199,6 @@ button:hover{
     <a href="gmail.html">Correo</a>
 </div>
 
-<!-- CONTENIDO -->
 <div class="contenido">
     <div class="card">
 
